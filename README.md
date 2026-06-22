@@ -1,0 +1,33 @@
+# Workerbee — Claude plugin marketplace
+
+The official Workerbee plugin for Claude — **the system for talent decisions**, in
+conversation. Build a Success Profile, evaluate talent, rank a shortlist, explain
+fit, compare people, find similar talent, log decisions, and improve the profile
+from feedback — all by asking in plain language.
+
+## Install (Claude Code)
+
+```
+/plugin marketplace add Workerbee-Inc/workerbee-marketplace
+/plugin install workerbee@workerbee
+```
+
+On first use, Claude opens the Workerbee sign-in (OAuth). Approve it once with your
+Workerbee login — there is no token to copy and nothing to configure. Manage the
+connection any time with `/mcp`.
+
+## Update
+
+```
+/plugin marketplace update workerbee
+```
+
+## What's inside
+
+A single `workerbee` plugin (v0.17.0) with ten skills that orchestrate the
+Workerbee MCP server end to end. The plugin connects to Workerbee production
+(`mcp.workerbee.ai`); nothing else from Workerbee's internal tooling ships here.
+
+---
+_This repository is generated from Workerbee's source plugin. Do not edit by hand —
+changes are overwritten on each release._
